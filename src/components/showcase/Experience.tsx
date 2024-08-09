@@ -1,5 +1,6 @@
 import React from 'react';
 import ResumeDownload from './ResumeDownload';
+import vrdrones from '../../assets/pictures/NextEra VR.jpeg'
 
 export interface ExperienceProps {}
 
@@ -10,230 +11,170 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>Hover</h1>
+                        <h1>NextEra</h1>
+                       
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={'https://hover.gg/'}
+                            href={'http://www.nexteraenergy.com/'}
                         >
-                            <h4>www.hover.gg</h4>
+                            <h4>NextEraEnergy.com</h4>
                         </a>
+                        
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Frontend Engineer</h3>
+                        <h3>Ignite Leadership Development Rotational Program</h3>
                         <b>
-                            <p>Summer 2020 - Fall 2021</p>
+                            <p>2022 - 2024</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Targeted towards online content creators and streamers
-                    looking to build a brand, Hover is the home of over 150K
-                    users. Written in Typescript using React, React-Native,
-                    Framer, Express, and Redux.
+                    <a href="http://www.nexteraenergy.com/">Nextera Energy, Inc. </a>
+                    is a Fortune 200 energy company and the largest energy utility in 
+                    North America, but more importantly, a Fortune top 25 in the world 
+                    in innovation.
                 </p>
                 <br />
+                <p>
+                    Ignite is a 2 year, 4 rotation program in NextEra Energy's IT business 
+                    unit. It allows select participants to try roles in areas from AI to 
+                    Cybersecurity, Cloud to Data Science and more. At the same time, we 
+                    get a holistic view of the company, understanding how teams and business 
+                    units interact, and participate in various leadership development programs 
+                    and activities.
+                </p>
                 <ul>
                     <li>
                         <p>
-                            Architected and engineered the vertical scrolling
-                            discover player which, at its daily peak, was
-                            responsible for generating over 600,000 views across
-                            20,000 active users.
+                            <b>Digital Innovation</b>
+                            <br />
+                            <ul>
+                                <li>Multiple patents pending around extended reality and artificial intelligence </li>
+                                <li>CIO Award for digital innovation, recognized for demonstrating how we can leverage metaverse technology in the energy industry across various initiatives</li>
+                                <li>Leading planning & coordination of a company-wide, week-long hackathon; ~200 participants, mentors, judges with 6 resulting projects moving now moving into production</li>
+                                <li>Employee Engagement lead for a cohort of 40</li>
+                            </ul>
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and implemented multiple features to
-                            increase app usability and user experience while
-                            ensuring the quality, maintainability and
-                            scalability of the front end as the user base grew
-                            by over 50,000.
+                            <b>Enterprise Security Architect</b>
+                            <ul>
+                                <li>Achieved $500K in cost avoidance as product lead for cyber systems assessment internal tooling</li>
+                                <li>GIAC Security Essentials certification (GSEC) </li>
+                                <li>Evaluated cybersecurity startups in partnership with our VC arm</li>
+                            </ul>
                         </p>
                     </li>
                     <li>
                         <p>
-                            Coordinated major refactors targeted towards app
-                            optimization and performance resulting in a smoother
-                            user experience and accomplished by eliminating
-                            redundant re-renders and API calls by over 50%.
+                            <b>Innovation Engineer & AI Project Manager - FPLAir Drone Image Recognition</b>
+                            <ul>
+                                <li>Designed and developed a pipeline for generating and self-annotating synthetic imagery using Unity 3D, enhancing AI model training for fault detection in field equipment</li>
+                                <li>Managed external vendors to develop 4 AI models on drone imagery, reducing the need for manual visual inspections to detect faulty equipment</li>
+                                <li>Developed strategy with Apple to effectively leverage the Vision Pro, starting with leading first project with an external vendor to develop an immersive training experience for power delivery operations</li>
+                            </ul>
                         </p>
                     </li>
                     <li>
                         <p>
-                            Directed and executed an internal migration of 3
-                            individual repositories to a single monorepo,
-                            greatly reducing overhead for developing new
-                            features, fixing bugs, and managing dependencies.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Rebuilt the website with React and shared mobile app
-                            components allowing users to access a wide variety
-                            of app interactions entirely on the web, resulting
-                            in over 700,000 total site visits.
+                            <b>Drone Hurricane Response Operations Coordinator (Ongoing Storm Role)</b>
+                            <ul>
+                                <li>Responsible for coordinating the deployment of drone pilots during critical hurricane response periods</li>
+                            </ul>
                         </p>
                     </li>
                 </ul>
+                <div className="captioned-image">
+                    <img src={vrdrones} alt="architecture" />
+                    <div style={styles.caption}>
+                        <p>
+                            <sub>
+                                <b>Figure 1: </b> Remotely operating drones in mixed reality! One of 3 
+                                companies in the country with FAA waivers to do so!
+                            </sub>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>BrACS</h1>
+                        <h1>UCF</h1>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://bracs.co/'}
+                            href={'https://techrangers.cdl.ucf.edu/'}
                         >
-                            <h4>www.bracs.co</h4>
+                            <h4>techrangers.cdl.ucf.edu</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Team Lead & Engineer</h3>
+                        <h3>Web Applications Developer</h3>
                         <b>
-                            <p>Fall 2021 - Spring 2022</p>
+                            <p>2017 - 2022</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Supervised and developed the front end of bracs.co, a
-                    beautifully simple and effective bracket creation and
-                    management engine. Written in Typescript using React and
-                    deployed using AWS Elastic Beanstalk.
+                    The <a href="https://techrangers.cdl.ucf.edu/home.php">Techrangers®</a> is a talented 
+                    team of student developers at the Center for Distributed Learning, who provide web/application development
+                    for the University of Central Florida (UCF) and course development for faculty. 
+                    <br />
+                    <br />
+                    Over 5 years, I've grown from a beginner programmer to a full-stack web developer, contributing to 
+                    numerous projects and gaining proficiency in the skills above. With my experience, I've also taken the responsibility
+                    to mentor new student developers as they join the Techranger team, passing on what I can offer to those that were in 
+                    my shoes not long ago.
                 </p>
                 <br />
-                <ul>
-                    <li>
-                        <p>
-                            Managed the project and team members by conducting
-                            bi-weekly stand-ups.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Architected bracket view UI using React Flow and
-                            custom bracket data types built from binary trees.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Created conversion algorithms to serialize bracket
-                            tree data to allow for saving in the cloud.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Implemented bracket generation utilities which
-                            employ gray code for proper team seeding and
-                            placement.
-                        </p>
-                    </li>
-                </ul>
             </div>
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>K-F/X</h1>
+                        <h1>NextEra</h1>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://kfxnyc.com/'}
+                            href={'https://nexteraenergy.com/'}
                         >
-                            <h4>www.kfxnyc.com</h4>
+                            <h4>www.nexteraenergy.com</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Special Effects Technician</h3>
+                        <h3>Software Engineer Intern</h3>
                         <b>
-                            <p>Fall 2019, Summer 2021</p>
+                            <p>Summers '19, '20, '21</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
-                <p>
-                    Applied problem solving and technical skills to operate
-                    large equipment such as rain machines, fog machines, small
-                    explosives and general rigging with a professional crew of
-                    50+ people.
-                </p>
-                <br />
-                <h3 style={styles.indent}>Screen Credits:</h3>
                 <ul>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/ray-donovan"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
+                            Applied problem solving and technical skills to operate
+                            large equipment such as rain machines, fog machines, small
+                            explosives and general rigging with a professional crew of
+                            50+ people.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan: The Movie</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/titles/3508117/ray-donovan-the-movie"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
-                        </p>
+                    <li>
+                        <p>Introduced AI and NLP to automate project planning process and save 800 hours/year in manual labor</p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Hightown</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.starz.com/us/en/series/hightown/57463"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                STARZ
-                            </a>{' '}
-                            ]
-                        </p>
+                    <li>
+                        <p>Implemented python automation scripts that caught when jobs were deviating from their planned costs, catching deviations as high as $1M</p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Bull</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.cbs.com/shows/bull/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                CBS
-                            </a>{' '}
-                            ]
-                        </p>
+                    <li>
+                        <p>Built and deployed a serverless status page to monitor the health of an internal work management tool using Cloudformation, Lambda, APIGateway, DynamoDB, RDS, IAM, and more</p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• At Home with Amy Sedaris</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.trutv.com/shows/at-home-with-amy-sedaris"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                truTV
-                            </a>{' '}
-                            ]
-                        </p>
+                    <li>
+                        <p>Converted CI/CD platform to Github Actions for first complex project in the company, enabling an easier transition for all future projects in a company-wide move to the new platform</p>
                     </li>
                 </ul>
             </div>

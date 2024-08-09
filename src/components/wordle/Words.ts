@@ -1,4 +1,5 @@
 const WORDS = [
+    'ljoks',
     'which',
     'there',
     'their',

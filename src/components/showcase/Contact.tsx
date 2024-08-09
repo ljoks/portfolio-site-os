@@ -31,83 +31,83 @@ const SocialBox: React.FC<SocialBoxProps> = ({ link, icon }) => {
 };
 
 const Contact: React.FC<ContactProps> = (props) => {
-    const [company, setCompany] = useState('');
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [message, setMessage] = useState('');
-    const [isFormValid, setIsFormValid] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
-    const [formMessage, setFormMessage] = useState('');
-    const [formMessageColor, setFormMessageColor] = useState('');
+    // const [company, setCompany] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [name, setName] = useState('');
+    // const [message, setMessage] = useState('');
+    // const [isFormValid, setIsFormValid] = useState(false);
+    // const [isLoading, setIsLoading] = useState(false);
+    // const [formMessage, setFormMessage] = useState('');
+    // const [formMessageColor, setFormMessageColor] = useState('');
 
-    useEffect(() => {
-        if (validateEmail(email) && name.length > 0 && message.length > 0) {
-            setIsFormValid(true);
-        } else {
-            setIsFormValid(false);
-        }
-    }, [email, name, message]);
+    // useEffect(() => {
+    //     if (validateEmail(email) && name.length > 0 && message.length > 0) {
+    //         setIsFormValid(true);
+    //     } else {
+    //         setIsFormValid(false);
+    //     }
+    // }, [email, name, message]);
 
-    async function submitForm() {
-        if (!isFormValid) {
-            setFormMessage('Form unable to validate, please try again.');
-            setFormMessageColor('red');
-            return;
-        }
-        try {
-            setIsLoading(true);
-            const res = await fetch(
-                'https://api.henryheffernan.com/api/contact',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        company,
-                        email,
-                        name,
-                        message,
-                    }),
-                }
-            );
-            // the response will be either {success: true} or {success: false, error: message}
-            const data = (await res.json()) as
-                | {
-                      success: false;
-                      error: string;
-                  }
-                | { success: true };
-            if (data.success) {
-                setFormMessage(`Message successfully sent. Thank you ${name}!`);
-                setCompany('');
-                setEmail('');
-                setName('');
-                setMessage('');
-                setFormMessageColor(colors.blue);
-                setIsLoading(false);
-            } else {
-                setFormMessage(data.error);
-                setFormMessageColor(colors.red);
-                setIsLoading(false);
-            }
-        } catch (e) {
-            setFormMessage(
-                'There was an error sending your message. Please try again.'
-            );
-            setFormMessageColor(colors.red);
-            setIsLoading(false);
-        }
-    }
+    // async function submitForm() {
+    //     if (!isFormValid) {
+    //         setFormMessage('Form unable to validate, please try again.');
+    //         setFormMessageColor('red');
+    //         return;
+    //     }
+    //     try {
+    //         setIsLoading(true);
+    //         const res = await fetch(
+    //             'https://api.henryheffernan.com/api/contact',
+    //             {
+    //                 method: 'POST',
+    //                 headers: {
+    //                     'Content-Type': 'application/json',
+    //                 },
+    //                 body: JSON.stringify({
+    //                     company,
+    //                     email,
+    //                     name,
+    //                     message,
+    //                 }),
+    //             }
+    //         );
+    //         // the response will be either {success: true} or {success: false, error: message}
+    //         const data = (await res.json()) as
+    //             | {
+    //                   success: false;
+    //                   error: string;
+    //               }
+    //             | { success: true };
+    //         if (data.success) {
+    //             setFormMessage(`Message successfully sent. Thank you ${name}!`);
+    //             setCompany('');
+    //             setEmail('');
+    //             setName('');
+    //             setMessage('');
+    //             setFormMessageColor(colors.blue);
+    //             setIsLoading(false);
+    //         } else {
+    //             setFormMessage(data.error);
+    //             setFormMessageColor(colors.red);
+    //             setIsLoading(false);
+    //         }
+    //     } catch (e) {
+    //         setFormMessage(
+    //             'There was an error sending your message. Please try again.'
+    //         );
+    //         setFormMessageColor(colors.red);
+    //         setIsLoading(false);
+    //     }
+    // }
 
-    useEffect(() => {
-        if (formMessage.length > 0) {
-            setTimeout(() => {
-                setFormMessage('');
-                setFormMessageColor('');
-            }, 4000);
-        }
-    }, [formMessage]);
+    // useEffect(() => {
+    //     if (formMessage.length > 0) {
+    //         setTimeout(() => {
+    //             setFormMessage('');
+    //             setFormMessageColor('');
+    //         }, 4000);
+    //     }
+    // }, [formMessage]);
 
     return (
         <div className="site-page-content">
@@ -116,34 +116,30 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <div style={styles.socials}>
                     <SocialBox
                         icon={ghIcon}
-                        link={'https://github.com/henryjeff'}
+                        link={'https://github.com/ljoks'}
                     />
                     <SocialBox
                         icon={inIcon}
-                        link={'https://www.linkedin.com/in/henryheffernan/'}
-                    />
-                    <SocialBox
-                        icon={twitterIcon}
-                        link={'https://twitter.com/henryheffernan'}
+                        link={'https://www.linkedin.com/in/ljoks/'}
                     />
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    I am currently employed, however if you have any
-                    opportunities, feel free to reach out - I would love to
-                    chat! You can reach me via my personal email, or fill out
-                    the form below!
+                    I am always open to listening to new 
+                    opportunities, so feel free to reach out - I would love to
+                    chat! You can reach me via my personal email!
+                    {/* or fill out the form below */}
                 </p>
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:ljoks0727@gmail.com">
+                        ljoks0727@gmail.com
                     </a>
                 </p>
 
-                <div style={styles.form}>
+                {/* <div style={styles.form}>
                     <label>
                         <p>
                             {!name && <span style={styles.star}>*</span>}
@@ -243,7 +239,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <ResumeDownload altText="Need a copy of my Resume?" />
         </div>

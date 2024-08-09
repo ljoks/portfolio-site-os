@@ -39,9 +39,9 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     };
 
     const NORMAL_SHUTDOWN = `Beginning Pre-Shutdown Sequence... ${_F}
-    Connecting to HHOS01/13:2000.${_F}.${_F}.${_F}
+    Connecting to LJOS01/13:2000.${_F}.${_F}.${_F}
     |
-    Established connection to HH0S01/13:2000, attempting data transfer.
+    Established connection to LJ0S01/13:2000, attempting data transfer.
     |
     ${_F}
     |Analyzing data... Done.| ${_F}

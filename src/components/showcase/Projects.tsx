@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import software from '../../assets/pictures/projects/software.gif';
 import art from '../../assets/pictures/projects/art.gif';
 import music from '../../assets/pictures/projects/music.gif';
+import asl from '../../assets/pictures/projects/sign language.gif'
+// import asl from '../../assets/pictures/projects/asl.gif'
+// import asl from '../../assets/pictures/projects/asl2.gif'
+import vrcat from '../../assets/pictures/projects/vr/vr cat.gif'
+import ai from '../../assets/pictures/projects/ai/ai brain.gif'
 
 export interface ProjectsProps {}
 
@@ -68,36 +73,33 @@ const Projects: React.FC<ProjectsProps> = (props) => {
     return (
         <div className="site-page-content">
             <h1>Projects</h1>
-            <h3>& Hobbies</h3>
             <br />
             <p>
                 Click on one of the areas below to check out some of my favorite
-                projects I've done in that field. I spent a lot of time to
-                include a lot of visuals and interactive media to showcase each
-                project. Enjoy!
+                projects I've worked on!
             </p>
             <br />
             <div style={styles.projectLinksContainer}>
                 <ProjectBox
+                    icon={vrcat}
+                    iconStyle={styles.computerIcon}
+                    title="VR/AR"
+                    subtitle="EXPERIENCES"
+                    route="vr"
+                />
+                <ProjectBox
+                    icon={ai}
+                    iconStyle={styles.aiIcon}
+                    title="AI"
+                    subtitle="PROJECTS"
+                    route="ai"
+                />
+                <ProjectBox
                     icon={software}
                     iconStyle={styles.computerIcon}
-                    title="Software"
-                    subtitle="PROJECTS"
-                    route="software"
-                />
-                <ProjectBox
-                    icon={music}
-                    iconStyle={styles.musicIcon}
-                    title="Music"
-                    subtitle="VENTURES"
-                    route="music"
-                />
-                <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
-                    route="art"
+                    title="Web"
+                    subtitle="Development"
+                    route="vr"
                 />
             </div>
         </div>
@@ -149,6 +151,10 @@ const styles: StyleSheetCSS = {
         width: 21 * 2,
         height: 37 * 2,
     },
+    aiIcon: {
+        width: 80,
+        height: 80
+    }
 };
 
 export default Projects;
