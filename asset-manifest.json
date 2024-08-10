@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-site-os/static/css/main.8377969e.css",
-    "main.js": "/portfolio-site-os/static/js/main.a4935ab7.js",
+    "main.js": "/portfolio-site-os/static/js/main.da57435b.js",
     "static/js/787.749b4a44.chunk.js": "/portfolio-site-os/static/js/787.749b4a44.chunk.js",
     "static/media/river plate.png": "/portfolio-site-os/static/media/river plate.eb3868bb0fefe976626e.png",
     "static/media/LJ.png": "/portfolio-site-os/static/media/LJ.a9401814418a577813f9.png",
@@ -23,11 +23,11 @@
     "static/media/Millennium-Bold.ttf": "/portfolio-site-os/static/media/Millennium-Bold.cd5e3be832ebd008c852.ttf",
     "index.html": "/portfolio-site-os/index.html",
     "main.8377969e.css.map": "/portfolio-site-os/static/css/main.8377969e.css.map",
-    "main.a4935ab7.js.map": "/portfolio-site-os/static/js/main.a4935ab7.js.map",
+    "main.da57435b.js.map": "/portfolio-site-os/static/js/main.da57435b.js.map",
     "787.749b4a44.chunk.js.map": "/portfolio-site-os/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8377969e.css",
-    "static/js/main.a4935ab7.js"
+    "static/js/main.da57435b.js"
   ]
 }
