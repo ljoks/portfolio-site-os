@@ -21,7 +21,7 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
         } else {
             setProjectsExpanded(false);
         }
-        if (location.pathname === '/') {
+        if (location.pathname === '/home' || location.pathname === '/portfolio-site-os/') {
             setIsHome(true);
         } else {
             setIsHome(false);
@@ -37,7 +37,7 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
                 <h3 style={styles.headerShowcase}>Showcase '24</h3>
             </div>
             <div style={styles.links}>
-                <Link containerStyle={styles.link} to="" text="HOME" />
+                <Link containerStyle={styles.link} to="home" text="HOME" />
                 <Link containerStyle={styles.link} to="about" text="ABOUT" />
                 <Link
                     containerStyle={styles.link}
