@@ -99,7 +99,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     iconStyle={styles.computerIcon}
                     title="Web"
                     subtitle="Development"
-                    route="vr"
+                    route="web"
                 />
             </div>
         </div>

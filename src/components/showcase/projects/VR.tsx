@@ -97,12 +97,6 @@ const VRProjects: React.FC<VRProjectsProps> = (props) => {
                 <br />
                 <div className="captioned-image">
                     <img src={poltergeist} style={styles.image} alt="poltergeist" />
-                    <p style={styles.caption}>
-                        <sub>
-                            <b>Figure 3:</b> Chess ai efficiently evaluates as many positions
-                            as possible at the provided search depth
-                        </sub>
-                    </p>
                 </div>
             </div>
             <ResumeDownload />

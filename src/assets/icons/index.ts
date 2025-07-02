@@ -30,7 +30,7 @@ const icons = {
     doomIcon: doomIcon,
     volumeOn: volumeOn,
     volumeOff: volumeOff,
-    credits: credits,
+    // credits: credits,
     scrabbleIcon: scrabbleIcon,
     LordleIcon: LordleIcon,
     close: close,

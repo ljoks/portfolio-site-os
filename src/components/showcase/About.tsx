@@ -20,8 +20,8 @@ const About: React.FC<AboutProps> = (props) => {
                     problems. With a strong foundation in computer science and 
                     experience in applying cutting-edge technologies to sectors
                     that are ripe for disruption - I'm currently focused on pushing
-                    the boundaries of the energy industry at NextEra Energy as part 
-                    of their Leadership Development Rotational Program.
+                    the boundaries of the energy industry at NextEra Energy as a technical lead
+                    in Innovation for AI & Emerging Technology.
                 </p>
                 <br />
                 <p>

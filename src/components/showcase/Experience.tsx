@@ -23,6 +23,60 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                         
                     </div>
                     <div style={styles.headerRow}>
+                        <h3>Innovation Strategist & Technical Lead</h3>
+                        <b>
+                            <p>2024 - Present</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className='text-block'>
+                <p>
+                    <a href="http://www.nexteraenergy.com/">Nextera Energy, Inc. </a>
+                    is a Fortune 200 energy company and the largest energy utility in 
+                    North America, but more importantly, a Fortune top 25 in the world 
+                    in innovation.
+                </p>
+                <br />
+                <p>
+                    This role is a mixture of both sourcing/evaluating startups for 
+                    investment & internal adoption, as well as running our own moonshots 
+                    in-house. We are constantly scanning the horizon for emerging technologies 
+                    and demonstrating how they might bring value to our business. 
+                </p>
+                <ul>
+                    <li>Operationalized our innovation pipeline and intake model to evaluate/incubate emerging technologies</li>
+                    <li>Sourcing & evaluating of ~85 startups annually for both VC investment and internal adoption</li>
+                    <li>Building & managing external partnerships with companies such as Apple, Amazon, Microsoft, and hyperscalers</li>
+                    <li>8 patents filed/pending at intersection of XR, simulation, drone orchestration, EV, renewable operations</li>
+                    <li>Continuous research & analysis on the interaction between societal trends, emerging tech, and the energy industry</li>
+                    <li>Partner with executive team to define our generative AI strategy, positioning the company for long-term ROI</li>
+                    <li>Effective communication of innovation across the organization from engineers to executives</li>
+                    <li>Serve on AI/software IP review committee</li>
+                    <li>Crafting & rapidly prototyping a diverse portfolio of PoCs with cross-functional teams. Some examples:</li>
+                    <ul>
+                        <li>Accelerate time-to-revenue developing an immersive site-planning platform visualizing renewable infrastructure on landowner parcels. Expanded to visualize simulations with various constraints applied</li>
+                        <li>Reimagine command centers in spatial partnering with Apple on Vision Pro. Piloting with drone ops & Skydio.</li>
+                        <li>LiDAR-based customer energy scan + voice LLM agent to create a more robust energy audit experience that also eliminates truckrolls to homes</li>
+                    </ul>
+                </ul>
+                <div className="captioned-image">
+                    <img src={vrdrones} alt="architecture" />
+                    <div style={styles.caption}>
+                        <p>
+                            <sub>
+                                <b>Figure 1: </b> Remotely operating drones in mixed reality! One of 3 
+                                companies in the country with FAA waivers to do so!
+                            </sub>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
                         <h3>Ignite Leadership Development Rotational Program</h3>
                         <b>
                             <p>2022 - 2024</p>
@@ -31,13 +85,6 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                 </div>
             </div>
             <div className="text-block">
-                <p>
-                    <a href="http://www.nexteraenergy.com/">Nextera Energy, Inc. </a>
-                    is a Fortune 200 energy company and the largest energy utility in 
-                    North America, but more importantly, a Fortune top 25 in the world 
-                    in innovation.
-                </p>
-                <br />
                 <p>
                     Ignite is a 2 year, 4 rotation program in NextEra Energy's IT business 
                     unit. It allows select participants to try roles in areas from AI to 
@@ -88,17 +135,7 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                         </p>
                     </li>
                 </ul>
-                <div className="captioned-image">
-                    <img src={vrdrones} alt="architecture" />
-                    <div style={styles.caption}>
-                        <p>
-                            <sub>
-                                <b>Figure 1: </b> Remotely operating drones in mixed reality! One of 3 
-                                companies in the country with FAA waivers to do so!
-                            </sub>
-                        </p>
-                    </div>
-                </div>
+                
             </div>
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
